@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-const schema = z.object({
+export const schema = z.object({
   model: z.string().min(3),
   year: z.number().int().gt(1900).lte(2022),
   color: z.string().min(3),
